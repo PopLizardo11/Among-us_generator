@@ -1,5 +1,6 @@
 const nameInput = document.querySelector("#input-name");
 const buttonInput = document.querySelector("#input-generate");
+const placeholder = document.querySelector("#placeholder")
 const nameOutput = document.querySelector("#output-name");
 const imgOutput = document.querySelector("#output-img");
 const rarityOutput = document.querySelector("#output-rarity");
@@ -27,6 +28,9 @@ let newImg = imgOutput;
 let newRarity = rarityOutput;
 
 buttonInput.addEventListener("click", () => {
+    imgOutput.style.display = "block";
+    placeholder.style.display = "none";
+
     for (const vowel of vowels) {
         if (nameInput.value[nameInput.value.length-1] === vowel) {
             nameOutput.textContent = nameInput.value + suffix;
