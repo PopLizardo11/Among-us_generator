@@ -11,6 +11,8 @@
 body {
     margin: 0;
     padding: 0;
+    background-image: url(images/among-us-space.png);
+    background-repeat: repeat-y;
 }
 
 .header {
