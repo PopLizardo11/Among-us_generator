@@ -3,7 +3,7 @@ const buttonInput = document.querySelector("#input-button");
 const nameOutput = document.querySelector("#output-name");
 const imgOutput = document.querySelector("#output-img");
 const rarityOutput = document.querySelector("#output-rarity");
-const imageLinks = [
+const imgLinks = [
     "https://static.wikia.nocookie.net/the-streets-roblox/images/9/9e/Amogus.jpg/revision/latest?cb=20210409100921", //Amogus
     "https://media.wired.com/photos/620581d7c228dc232641feaa/4:3/w_2132,h_1599,c_limit/Games-Innersloth-Among-Us-Key-Art.jpg", //Among us and the group
     "https://cdn.vox-cdn.com/thumbor/XhTJC44kN4rZ6QxsOHjdDH6Er8Q=/0x0:2429x1633/1200x800/filters:focal(1021x623:1409x1011)/cdn.vox-cdn.com/uploads/chorus_image/image/69863777/among_us_costumes.0.png", // Costumes
@@ -43,5 +43,11 @@ buttonInput.addEventListener("click", () => {
             const modName = nameInput.value.slice(0, nameInput.value.length-1);
             nameOutput.textContent = modName + suffix;
         }
+    }
+
+    if (nameInput.value === "") {
+        imgOutput.src = "https://static.wikia.nocookie.net/among-us-wiki/images/2/27/Space.png/revision/latest?cb=20201014232555";
+    } else {
+        imgOutput.src = arrRandom(imgLinks);
     }
 });
