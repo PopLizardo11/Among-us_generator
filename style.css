@@ -76,6 +76,10 @@ body {
 }
 
 .output-container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
     height: 450px;
     width: 700px;
     padding: 15px;
@@ -126,7 +130,21 @@ body {
 
 /*Output Image*/
 #output-img {
-    max-height: 350px;
-    max-width: 480px;
+    max-height: 300px;
+    max-width: 700px;
     border-radius: 15px;
+}
+
+#output-rarity {
+    color: white;
+    font-family: "Amatic SC",Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    margin: 0;
+}
+
+#output-name {
+    color: white;
+    font-family: "Amatic SC",Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    margin: 0;
 }
