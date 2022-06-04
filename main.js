@@ -34,20 +34,27 @@ buttonInput.addEventListener("click", () => {
         } else if (nameInput.value === "69") {
             nameOutput.textContent = `NOICE`;
         } else if (numbers.test(nameInput.value) === true) {
-            nameOutput.textContent = `${nameInput.value} have numbers and thus rejected`;
+            nameOutput.textContent = `${nameInput.value} have numbers and thus ejected`;
         } else if (specialChar.test(nameInput.value) === true) {
-            nameOutput.textContent = `${nameInput.value} have special characters and thus rejected`;
+            nameOutput.textContent = `${nameInput.value} have special characters and thus ejected`;
         } else if (nameInput.value === "") {
-            nameOutput.textContent = `Your input have no characters and thus rejected`;
+            nameOutput.textContent = `Your input have no characters and thus ejected`;
         } else {
             const modName = nameInput.value.slice(0, nameInput.value.length-1);
             nameOutput.textContent = modName + suffix;
         }
     }
 
-    if (nameInput.value === "") {
+    if (nameOutput.textContent.includes("ejected") === true) {
         imgOutput.src = "https://static.wikia.nocookie.net/among-us-wiki/images/2/27/Space.png/revision/latest?cb=20201014232555";
     } else {
         imgOutput.src = arrRandom(imgLinks);
     }
+
+    if (nameOutput.textContent.includes("ejected") === true) {
+        rarityOutput.textContent = "EJECTED!"
+    } else {
+        rarityOutput.textContent = arrRandom(rarities);
+    }
+
 });
