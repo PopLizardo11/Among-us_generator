@@ -1,5 +1,5 @@
 const nameInput = document.querySelector("#input-name");
-const buttonInput = document.querySelector("#input-button");
+const buttonInput = document.querySelector("#input-generate");
 const nameOutput = document.querySelector("#output-name");
 const imgOutput = document.querySelector("#output-img");
 const rarityOutput = document.querySelector("#output-rarity");

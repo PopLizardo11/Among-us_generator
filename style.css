@@ -60,6 +60,7 @@ body {
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
+    gap: 30px;
     margin: 30px;
 }
 
@@ -96,4 +97,27 @@ body {
     font-size: 20px;
     font-weight: bold;
     font-family: Rubik, Arial, Helvetica, sans-serif;
+}
+
+#input-generate {
+    padding: 10px 20px ;
+    background-color: red;
+    border-radius: 10px;
+    border: 2px solid yellow;
+    color: yellow;
+    font-family: amongUs, Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    box-shadow: 0 9px rgb(192, 192, 0);
+    cursor: pointer;
+}
+
+#input-generate:hover {
+    background-color: rgb(225, 0, 0);
+}
+
+#input-generate:active {
+    background-color: rgb(225, 0, 0);
+    box-shadow: 0 5px rgb(192, 192, 0);
+    transform: translateY(4px);
 }
