@@ -1,3 +1,13 @@
+@font-face {
+    font-family: AmongUs;
+    src: url(fonts/AmongUs-Regular.ttf);
+}
+
+@font-face {
+    font-family: VCR-OSD-MONO;
+    src: url(fonts/VCR_OSD_MONO_1.001.ttf);
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -17,7 +27,9 @@ body {
 
 .headings {
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: AmongUs, "Amatic SC", Arial, sans-serif;
+    font-size: 50px;
+    margin: 0;
 }
 
 
