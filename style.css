@@ -36,16 +36,16 @@ body {
 
 
 .header-links {
-    display: flex;
-    gap: 10px;
-}
-
-.header-img {
     width: auto;
     height: 100px;
     border-radius: 50%;
     filter: grayscale(100%);
     border: 3px solid white;
+}
+
+.header-img {
+    display: flex;
+    gap: 10px;
 }
 
 #header-logo {
