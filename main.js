@@ -37,6 +37,8 @@ buttonInput.addEventListener("click", () => {
             break; // have to add break to not show undefined
         } else if (nameInput.value === "69") {
             nameOutput.textContent = `NOICE`;
+        } else if (nameInput.value.length >= 16) {
+            nameOutput.textContent = "Your name is too long thus ejected";
         } else if (numbers.test(nameInput.value) === true) {
             nameOutput.textContent = `${nameInput.value} have numbers and thus ejected`;
         } else if (specialChar.test(nameInput.value) === true) {
