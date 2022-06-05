@@ -15,6 +15,13 @@ const imgLinks = [
 ];
 const suffix = "mogus";
 const rarities = ["Certified Sus", "Drip", "Amogusus", "Sussy Baka", "Chadmate", "Totally vented", "Caught in 4K"]
+const rarityStyles = [
+    "common",
+    "cartoony",
+    "drip",
+    "hipster"
+];
+
 const vowels = ["a", "e", "i", "o", "u"];
 const specialChar = /[ `!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/;
 const numbers = /[1234567890]/;
@@ -61,6 +68,8 @@ buttonInput.addEventListener("click", () => {
         rarityOutput.textContent = "EJECTED!"
     } else {
         rarityOutput.textContent = arrRandom(rarities);
+        const rarityClass = arrRandom(rarityStyles); 
+        rarityOutput.className = rarityClass;
     }
 
 });

@@ -139,7 +139,7 @@ body {
 #output-rarity {
     margin: 0; 
     font-size: 40px;
-    padding: 0px; 
+    padding: 0px 10px; 
 }
 
 #output-name {
