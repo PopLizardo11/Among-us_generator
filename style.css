@@ -239,3 +239,26 @@ body {
         text-shadow: 4px 4px 4px skyblue;
     }
 }
+
+.waver {
+    color: white;
+    font-family: Rubik, Arial, Helvetica, sans-serif;
+    text-shadow: -6px 4px 4px white;
+    animation-name: waver;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes waver {
+    0% {
+        margin-left: -70px;
+    }
+    50% {
+        margin-left: 70px;
+        text-shadow: 6px 4px 4px white;
+    }
+    100% {
+        margin-left: -70px;
+    }
+}
+
