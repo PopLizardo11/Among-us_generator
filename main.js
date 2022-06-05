@@ -65,7 +65,8 @@ buttonInput.addEventListener("click", () => {
     }
 
     if (nameOutput.textContent.includes("ejected") === true) {
-        rarityOutput.textContent = "EJECTED!"
+        rarityOutput.textContent = "EJECTED!";
+        rarityOutput.className = "drip";
     } else {
         rarityOutput.textContent = arrRandom(rarities);
         const rarityClass = arrRandom(rarityStyles); 
