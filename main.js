@@ -4,6 +4,8 @@ const placeholder = document.querySelector("#placeholder")
 const nameOutput = document.querySelector("#output-name");
 const imgOutput = document.querySelector("#output-img");
 const rarityOutput = document.querySelector("#output-rarity");
+const logo = document.querySelector("#header-logo");
+
 const imgLinks = [
     "https://static.wikia.nocookie.net/the-streets-roblox/images/9/9e/Amogus.jpg/revision/latest?cb=20210409100921", //Amogus
     "https://media.wired.com/photos/620581d7c228dc232641feaa/4:3/w_2132,h_1599,c_limit/Games-Innersloth-Among-Us-Key-Art.jpg", //Among us and the group
@@ -33,10 +35,13 @@ function arrRandom(array) {
     return array[Math.floor(Math.random() * array.length)];
 }
 
+
 let newSuffix = suffix;
 let newImg = imgOutput;
 let newRarity = rarityOutput;
 
+
+// Event listener to button
 buttonInput.addEventListener("click", () => {
     imgOutput.style.display = "block";
     placeholder.style.display = "none";
