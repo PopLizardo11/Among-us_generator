@@ -214,3 +214,28 @@ body {
         letter-spacing: normal;
     }
 }
+
+.sign {
+    color: white;
+    text-shadow: 4px 4px 4px skyblue;
+    -webkit-text-stroke: 1px rgb(76, 118, 135);
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 4px;
+    animation-name: sign;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes sign {
+    0% {
+        text-shadow: 4px 4px 4px skyblue;
+    }
+    50% {
+        text-shadow: 4px 8px 4px rgb(108, 164, 188);
+        transform: translateY(-4px);
+        font-size: 42px;
+    }
+    100% {
+        text-shadow: 4px 4px 4px skyblue;
+    }
+}

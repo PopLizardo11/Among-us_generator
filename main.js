@@ -19,7 +19,8 @@ const rarityStyles = [
     "common",
     "cartoony",
     "drip",
-    "hipster"
+    "hipster",
+    "sign"
 ];
 
 const vowels = ["a", "e", "i", "o", "u"];
