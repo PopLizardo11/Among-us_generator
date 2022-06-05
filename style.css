@@ -262,3 +262,26 @@ body {
     }
 }
 
+.innovate {
+    color: skyblue;
+    font-family:  "Amatic SC", Arial, Helvetica, sans-serif;
+    letter-spacing: 5px;
+    border: 2px solid rgb(198, 226, 237);
+    animation-name: innovate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes innovate {
+    0% {
+        border: 2px solid rgb(198, 226, 237);
+    }
+    50% {
+        border: 5px groove rgb(51, 185, 237);
+        border-radius: 10px;
+        color: rgb(51, 185, 237);
+    }
+    100% {
+        border: 2px solid rgb(198, 226, 237);
+    }
+}

@@ -21,7 +21,8 @@ const rarityStyles = [
     "drip",
     "hipster",
     "sign",
-    "waver"
+    "waver",
+    "innovate"
 ];
 
 const vowels = ["a", "e", "i", "o", "u"];
