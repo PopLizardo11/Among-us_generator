@@ -34,6 +34,10 @@ body {
     margin: 0;
 }
 
+.header-images {
+    display: flex;
+    gap: 10px;
+}
 
 .header-links {
     width: auto;
@@ -43,10 +47,6 @@ body {
     border: 3px solid white;
 }
 
-.header-img {
-    display: flex;
-    gap: 10px;
-}
 
 #header-logo {
     height: 100px;
