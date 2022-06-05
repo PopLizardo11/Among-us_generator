@@ -137,10 +137,9 @@ body {
 }
 
 #output-rarity {
-    color: white;
-    font-family: "Amatic SC",Arial, Helvetica, sans-serif;
+    margin: 0; 
     font-size: 40px;
-    margin: 0;
+    padding: 0px; 
 }
 
 #output-name {
@@ -164,5 +163,54 @@ body {
     from{filter: hue-rotate(0);
     }
     to{filter: hue-rotate(360deg);
+    }
+}
+
+/*Rarities styles*/
+
+.common {
+    color: white;
+    font-family: "Amatic SC",Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    margin: 0;
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
+}
+
+.cartoony {
+    color: yellow;
+    border-radius: 2px;
+    border-left: 4px double yellow;
+    border-right: 4px double yellow;
+    font-family: amongUs, "Rubik", Arial, Helvetica, sans-serif;
+}
+
+.drip {
+    color: black;
+    background-image: linear-gradient(to bottom right, red, rgb(144, 0, 0));
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 4px;
+}
+
+.hipster {
+    color: yellowgreen;
+    font-family: Rubik, Geneva, Tahoma, sans-serif;
+    animation-name: hipster;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes hipster {
+    0% {
+        filter: hue-rotate(0);
+        letter-spacing: normal;
+    }
+    50% {
+        filter: hue-rotate(180deg);
+        letter-spacing: 5px;
+    }
+    100% {
+        filter: hue-rotate(360deg);
+        letter-spacing: normal;
     }
 }
