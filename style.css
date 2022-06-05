@@ -45,8 +45,18 @@ body {
     border-radius: 50%;
     filter: grayscale(100%);
     border: 3px solid white;
+    transition: .5s;
 }
 
+.header-links:hover {
+    filter: grayscale(0);
+    margin: 0px 20px;
+}
+
+.header-links:active {
+    filter: sepia(100%);
+    transform: translateY(10px);
+}
 
 #header-logo {
     height: 100px;
