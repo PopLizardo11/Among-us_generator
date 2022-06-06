@@ -3,6 +3,12 @@
 ## CREDITS O.O
 Below are credits to used images, fonts and other medias. 
 
+## OVERVIEW
+
+## Current Version: Version 1
+![Overview of Among Us Generator](images/overview.gif)
+
+
 ### HEADER IMAGES
 
 1. **Header-logo** 
